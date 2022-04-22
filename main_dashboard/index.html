@@ -20,56 +20,62 @@
         list="student_list_json"
       />
       <datalist id="student_list_json">
-        <option value="Ashaba"></option>
-        <option value="Asiimawe"></option>
-        <option value="Lionel"></option>
-        <option value="Kelly Jones"></option>
-        <option value="Augustine Mugabo"></option>
-        <option value="Ddembe John Paul"></option>
-        <option value="Asiimwe Martin"></option>
-        <option value="Blair Jones"></option>
-        <option value="Besiima Samuel"></option>
-        <option value="Denis Jovans"></option>
+        <option id="btn" onclick="" value="Ashaba"></option>
+        <option id="btn" value="Asiimawe"></option>
+        <option id="btn" value="Lionel"></option>
+        <option id="btn" value="Kelly Jones"></option>
+        <option id="btn" value="Augustine Mugabo"></option>
+        <option id="btn" value="Ddembe John Paul"></option>
+        <option id="btn" value="Asiimwe Martin"></option>
+        <option id="btn" value="Blair Jones"></option>
+        <option id="btn" value="Besiima Samuel"></option>
+        <option id="btn" value="Denis Jovans"></option>
       </datalist>
 
       <a href="" class="admin_panel">Go to admin</a>
     </div>
 
+    <div id="modal_form">
+      <h4>Register student entry.</h4>
+      <input type="text" name="Name" placeholder="Your-name" id="name" />
+      <input type="text" name="strm" placeholder="Stream" id="name" />
+      <input type="text" name="class" placeholder="class" id="name" />
+      <br />
+      <textarea
+        name="Decription"
+        id="desc."
+        placeholder="Description of medication or problem"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <br />
+      <div class="submit_button">
+        <a href="" class="submit">Done</a>
+      </div>
+
+      <span class="close">&times;</span>
+    </div>
+
     <script>
-      // Define our key players in the code.
-      // var data_List = document.getElementById("student_list_json");
-      // var input = document.getElementById("search");
+      var modal_form = document.getElementById("modal_form");
+      var button = document.getElementById("btn");
+      var close = document.getElementsByClassName("close")[0];
 
-      // var newRequest = new XMLHttpRequest();
+      button.onclick = function () {
+        modal_form.style.display = "block";
+      };
 
-      // // Handle states made by the request.
-      // request.onreadystatechange = function () {
-      //   if (request.readyState === 4) {
-      //     if (request.status === 200) {
-      //       var data = JSON.parse(request.responseText);
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal_form.style.display = "none";
+      };
 
-      //       //   Loop through the data and add it to the page.
-      //       jsonOptions.foreach(function (item) {
-      //         var option = document.createElement("option");
-      //         option.value = item;
-      //         //   Add the option to the datalist.
-      //         data_List.appendChild(option);
-      //       });
-
-      //       input.placeholder = "Search for a student...";
-      //     } else {
-      //       input.placeholder = "Error: Could not load data.";
-      //     }
-      //   }
-      // };
-
-      // // Set up and make the request.
-      // request.open(
-      //   "GET",
-      //   "https://github.com/Pablo-cyber21/sickbaymgt/blob/main/main_dashboard/names.json",
-      //   true
-      // );
-      // request.send();
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal_form) {
+          modal_form.style.display = "none";
+        }
+      };
     </script>
   </body>
 </html>

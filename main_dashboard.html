@@ -183,35 +183,20 @@
 
 
       <div class="daily_stats">
+        <div class="daily_counter">
         <p>Visits:
           <br><br>
            <span>__</span> </p>
         <p>Inpatients: 
           <br><br>
           <span>__</span></p>
+          </div>
+      <a class="new-student-add" href="" class="admin_panel">Add new student</a>
+             
        </div>
     </div>
     
     <script>
-      var modal_form = document.getElementById("modal_form");
-      var button = document.getElementById("btn");
-      var close = document.getElementsByClassName("close")[0];
-
-      button.onclick = function () {
-        modal_form.style.display = "block";
-      };
-
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function () {
-        modal_form.style.display = "none";
-      };
-
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function (event) {
-        if (event.target == modal_form) {
-          modal_form.style.display = "none";
-        }
-      };
     </script>
   </body>
 </html>

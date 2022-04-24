@@ -105,7 +105,7 @@ textarea{
         border: 6px solid #ccc;;  
   }
 
-  .daily_stats{
+  .daily_counter{
       width: 500px; 
       display: flex;
       flex-direction:row ;
@@ -113,5 +113,20 @@ textarea{
       font-size: 1.66em;
       background-color:#b8c0ff ;
       padding: 1.22em;
-
+        border-radius: 10px;
   }
+
+.new-student-add{
+    width: 40%;
+    display: flex;
+    margin-top: 12px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+    text-decoration: none;
+    padding:  10px;
+    background-color: #d4a373ff;
+    border-radius: 5px;
+
+}

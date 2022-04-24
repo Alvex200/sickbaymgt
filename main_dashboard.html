@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/style-main-dashboard.css" />
+    <title>Main_dashboard</title>
+  </head>
+  <body>
+    <div class="top_controls">
+      <!-- Include the logo of school. -->
+
+      <input
+        placeholder="Search for student"
+        type="search"
+        name="Search"
+        id="search"
+        list="student_list_json"
+      />
+      <datalist id="student_list_json">
+        <option id="btn" onclick="" value="Ashaba"></option>
+        <option id="btn" value="Asiimawe"></option>
+        <option id="btn" value="Lionel"></option>
+        <option id="btn" value="Kelly Jones"></option>
+        <option id="btn" value="Augustine Mugabo"></option>
+        <option id="btn" value="Ddembe John Paul"></option>
+        <option id="btn" value="Asiimwe Martin"></option>
+        <option id="btn" value="Blair Jones"></option>
+        <option id="btn" value="Besiima Samuel"></option>
+        <option id="btn" value="Denis Jovans"></option>
+      </datalist>
+
+      <a href="" class="admin_panel">Go to admin</a>
+    </div>
+
+    <div id="modal_form">
+      <h4>Register student entry.</h4>
+      <input type="text" name="Name" placeholder="Your-name" id="name" />
+      <input type="text" name="strm" placeholder="Stream" id="name" />
+      <input type="text" name="class" placeholder="class" id="name" />
+      <br />
+      <textarea
+        name="Decription"
+        id="desc."
+        placeholder="Description of medication or problem"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <br />
+      <div class="submit_button">
+        <a href="" class="submit">Done</a>
+      </div>
+    </div>
+
+      <span class="close">&times;</span>
+    </div>
+
+    <div class="main-view">
+      <div class="students_table">
+        <table>
+      <h4>Students attended</h4>
+
+          <tr>
+            <th>Name</th>
+            <th>Stream</th>
+            <th>Class</th>
+            <th>Description</th>
+            <th>Date</th>
+            <th>Admitted</th>
+          </tr>
+          <tr>
+            <td>Ashaba</td>
+            <td>D</td>
+            <td>S.3</td>
+            <td>
+              <p>
+                Flu and cough
+              </p>
+            </td> 
+            <td>
+              <p>
+                12/12/2020
+              </p>
+            </td>
+            <td>
+              <input type="checkbox" name="Check_box" id="check">
+            </td>
+          </tr>
+          <tr>
+            <td>Desmond </td>
+            <td>F</td>
+            <td>S.2</td>
+            <td>
+              <p>
+                Flu 
+              </p>
+            </td> 
+            <td>
+              <p>
+                12/12/2020
+              </p>
+            </td>
+            <td>
+              <input type="checkbox" name="Check_box" id="check">
+            </td>
+          </tr>
+          <tr>
+            <td>Pablo </td>
+            <td>F</td>
+            <td>S.2</td>
+            <td>
+              <p>
+                Eye surgery
+              </p>
+            </td> 
+            <td>
+              <p>
+                12/12/2020
+              </p>
+            </td>
+            <td>
+              <input type="checkbox" name="Check_box" id="check">
+            </td>
+            </tr>
+          <tr>
+            <td>Desmond </td>
+            <td>F</td>
+            <td>S.2</td>
+            <td>
+              <p>
+                Broken leg
+              </p>
+            </td> 
+            <td>
+              <p>
+                12/12/2020
+              </p>
+            </td>
+            <td>
+              <input type="checkbox" name="Check_box" id="check">
+            </td>
+            </tr>
+            <tr>
+              <td>Neigel </td>
+            <td>F</td>
+            <td>S.2</td>
+            <td>
+              <p>
+                Pneumonia
+              </p>
+            </td> 
+            <td>
+              <p>
+                12/12/2020
+              </p>
+            </td>
+            <td>
+              <input type="checkbox" name="Check_box" id="check">
+            </td>
+            </tr>
+            <tr>
+              <td>Neigel </td>
+              <td>F</td>
+              <td>S.2</td>
+              <td>
+                <p>
+                  Pneumonia
+                </p>
+              </td> 
+              <td>
+                <p>
+                  12/12/2020
+                </p>
+              </td>
+              <td>
+                <input type="checkbox" name="Check_box" id="check">
+              </td>
+            </tr>
+        </table>
+      </div>
+
+
+      <div class="daily_stats">
+        <p>Visits:
+          <br><br>
+           <span>__</span> </p>
+        <p>Inpatients: 
+          <br><br>
+          <span>__</span></p>
+       </div>
+    </div>
+    
+    <script>
+      var modal_form = document.getElementById("modal_form");
+      var button = document.getElementById("btn");
+      var close = document.getElementsByClassName("close")[0];
+
+      button.onclick = function () {
+        modal_form.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal_form.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal_form) {
+          modal_form.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,26 +1,21 @@
 
-/* CSS HEX */
---pale-spring-bud: #ccd5aeff;
---pale-spring-bud-2: #e9edc9ff;
---cornsilk: #fefae0ff;
---papaya-whip: #faedcdff;
---fawn: #d4a373ff;
-
-/* CSS HSL */
---pale-spring-bud: hsla(74, 32%, 76%, 1);
---pale-spring-bud-2: hsla(67, 50%, 86%, 1);
---cornsilk: hsla(52, 94%, 94%, 1);
---papaya-whip: hsla(43, 82%, 89%, 1);
---fawn: hsla(30, 53%, 64%, 1);
-
+ffd6ff,e7c6ff,c8b6ff,b8c0ff,bbd0ff
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+h4{
+    font-size: 1.5rem;
+
+    color:#bbd0ff ;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 body{
-    background-color: #f5f5f5;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -30,7 +25,17 @@ display: flex;
 flex-direction: row;
 justify-content:center;
 align-items: center;
-gap: 2em;
+gap: 7em;
+}
+
+td{
+    padding: 0.5em;
+    border-bottom:2px solid #d4a373ff;
+
+}
+
+tr{
+    border:4px solid black;
 }
 
 input{
@@ -82,4 +87,31 @@ textarea{
     float: right;
     font-size: 28px;
     font-weight: bold;
+  }
+
+  .main-view{
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .students_table{
+      overflow-y:scroll;
+        width: 550px;
+        height:500px;
+        border-radius: 5px;
+        border: 6px solid #ccc;;  
+  }
+
+  .daily_stats{
+      width: 500px; 
+      display: flex;
+      flex-direction:row ;
+      gap: 2em;
+      font-size: 1.66em;
+      background-color:#b8c0ff ;
+      padding: 1.22em;
+
   }
